@@ -13,9 +13,9 @@ class test_crear_constructor(unittest.TestCase): # heredamos de unittest de todo
         contador1.__inicial = 1
 
         #verificamos la condicion
-        self.assertEqual(contador1.inicial, 0)
-        self.assertEqual(contador1.incremento, 2)
-        self.assertEqual(contador1.limite, 5)
+        self.assertEqual(contador1.getInicial(), 0)
+        self.assertEqual(contador1.getIncremento(), 2)
+        self.assertEqual(contador1.getLimite(), 5)
 
 
     # Segundo test:  El valor inicial y el incremento tomarán un valor de 0 y 1 respectivamente si no se indica nada. 
@@ -25,9 +25,9 @@ class test_crear_constructor(unittest.TestCase): # heredamos de unittest de todo
         
         contador2 = contador.Contador(limite = 3)
 
-        self.assertEqual(contador2.inicial, 0)
-        self.assertEqual(contador2.incremento, 1)
-        self.assertEqual(contador2.limite, 3)
+        self.assertEqual(contador2.getInicial(), 0)
+        self.assertEqual(contador2.getIncremento(), 1)
+        self.assertEqual(contador2.getLimite(), 3)
 
         #  Tercer Test: Ninguno de los tres valores (valor inicial, incremento y límite) pueden cambiarse una vez creado  el contador. 
 
