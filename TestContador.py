@@ -15,3 +15,6 @@ class test_crear_constructor(unittest.TestCase): # heredamos de unittest de todo
         self.assertEqual(contador1.inicial, 0)
         self.assertEqual(contador1.incremento, 2)
         self.assertEqual(contador1.limite, 5)
+
+if __name__=="__main__":
+    unittest.main()
