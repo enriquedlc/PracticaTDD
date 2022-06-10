@@ -22,5 +22,7 @@ class Contador():
         self.__valorActualContador = self.__valorActualContador + self.__incremento
         print(self.__valorActualContador)
         if self.__valorActualContador > self.__limite:
+#            self.__valorActualContador = self.__inicial
             print("Se supero el limite del contador")
+#        print(self.__valorActualContador)
     

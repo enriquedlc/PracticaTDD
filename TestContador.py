@@ -61,5 +61,26 @@ class test_crear_constructor(unittest.TestCase): # heredamos de unittest de todo
         
         contador4.incrementarValorInicial()
 
+    def test5(self):
+        contador5 = contador.Contador(limite = 7)
+        
+        contador5.incrementarValorInicial()
+        
+        contador5.incrementarValorInicial()
+        
+        contador5.incrementarValorInicial()
+        
+        contador5.incrementarValorInicial()
+        
+        contador5.incrementarValorInicial()
+        
+        contador5.incrementarValorInicial()
+
+        contador5.incrementarValorInicial()
+        
+        contador5.incrementarValorInicial()
+
+        self.assertEqual(contador5.getValorActualContador(), 0)
+
 if __name__=="__main__":
     unittest.main()
