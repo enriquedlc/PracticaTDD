@@ -10,6 +10,7 @@ class test_crear_constructor(unittest.TestCase): # heredamos de unittest de todo
 
         #condicion inicial
         contador1 = contador.Contador(0, 2, 5)
+        contador1.__inicial = 1
 
         #verificamos la condicion
         self.assertEqual(contador1.inicial, 0)
@@ -32,11 +33,11 @@ class test_crear_constructor(unittest.TestCase): # heredamos de unittest de todo
 
     def test3(self):
          
-         contador3 = contador.Contador(limite = 3)
+         contador3 = contador.Contador(limite = 7)
          contador3.__inicial = 1
 
          self.assertEqual(contador3.getInicial(), 0)
-         self.assertEqual(contador3.getIncremento(), 2)
+         self.assertEqual(contador3.getIncremento(), 1)
          self.assertEqual(contador3.getLimite(), 7)
 
 if __name__=="__main__":
