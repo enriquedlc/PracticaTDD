@@ -29,7 +29,7 @@ class test_crear_constructor(unittest.TestCase): # heredamos de unittest de todo
         self.assertEqual(contador2.getIncremento(), 1)
         self.assertEqual(contador2.getLimite(), 3)
 
-        #  Tercer Test: Ninguno de los tres valores (valor inicial, incremento y límite) pueden cambiarse una vez creado  el contador. 
+    #  Tercer Test: Ninguno de los tres valores (valor inicial, incremento y límite) pueden cambiarse una vez creado  el contador. 
 
     def test3(self):
          
@@ -40,20 +40,25 @@ class test_crear_constructor(unittest.TestCase): # heredamos de unittest de todo
          self.assertEqual(contador3.getIncremento(), 1)
          self.assertEqual(contador3.getLimite(), 7)
 
+    # Cuarto Test:  Al incrementar el contador se suma al valor actual al incremento y nos indican si se superó el  límite.  
+
     def test4(self):
-        contador4 = contador.Contador(limite = 5)
+        contador4 = contador.Contador(limite = 7)
         
+        contador4.incrementarValorInicial()
+        
+        contador4.incrementarValorInicial()
+        
+        contador4.incrementarValorInicial()
+        
+        contador4.incrementarValorInicial()
+        
+        contador4.incrementarValorInicial()
+        
+        contador4.incrementarValorInicial()
 
         contador4.incrementarValorInicial()
-        self.assertEqual(contador4.getValorActualContador(), 1)
-        contador4.incrementarValorInicial()
-        self.assertEqual(contador4.getValorActualContador(), 2)
-        contador4.incrementarValorInicial()
-        self.assertEqual(contador4.getValorActualContador(), 3)
-        contador4.incrementarValorInicial()
-        self.assertEqual(contador4.getValorActualContador(), 4)
-        contador4.incrementarValorInicial()
-        self.assertEqual(contador4.getValorActualContador(), 5)
+        
         contador4.incrementarValorInicial()
 
 if __name__=="__main__":
