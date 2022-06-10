@@ -26,7 +26,7 @@ class Contador():
             print("Se supero el limite del contador")
             print(self.__valorActualContador)
 
-    # def reset(self):
-    #     self.__valorActualContador = self.__inicial
-    #     print("El valor sse ha reseteado --> " , self.__valorActualContador)
+    def reset(self):
+        self.__valorActualContador = self.__inicial
+        print("El valor sse ha reseteado --> " , self.__valorActualContador)
     
