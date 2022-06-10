@@ -28,5 +28,16 @@ class test_crear_constructor(unittest.TestCase): # heredamos de unittest de todo
         self.assertEqual(contador2.incremento, 1)
         self.assertEqual(contador2.limite, 3)
 
+        #  Tercer Test: Ninguno de los tres valores (valor inicial, incremento y límite) pueden cambiarse una vez creado  el contador. 
+
+    def test3(self):
+         
+         contador3 = contador.Contador(limite = 3)
+         contador3.__inicial = 1
+
+         self.assertEqual(contador3.getInicial(), 0)
+         self.assertEqual(contador3.getIncremento(), 2)
+         self.assertEqual(contador3.getLimite(), 7)
+
 if __name__=="__main__":
     unittest.main()
